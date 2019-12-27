@@ -16,7 +16,7 @@
 
 ## Part_1
 
-![79381004_2670840826342685_6687252775518076928_n](/Users/davidfan/Downloads/79381004_2670840826342685_6687252775518076928_n.jpg)
+![79381004_2670840826342685_6687252775518076928_n](./best/02.png)
 
 ## Part_2
 
@@ -24,7 +24,7 @@
 
 - cost computation : 我使用Census transform的方式，來計算L,R的cost，另外在左右邊界上，我們可能會有無法計算cost的情況，因為window已經超過整個圖片，因此我會將這些沒有辦法計算的邊界，沒有計算到的disparity設成最大，這樣就不會有錯誤的disparity計算。
 ##### Census transform 概念
-![image-20191227102526437](/Users/davidfan/Library/Application Support/typora-user-images/image-20191227102526437.png)
+![79381004_2670840826342685_6687252775518076928_n](./best/01.png)
 -  cost aggregation : 這裡我使用blur來做均勻化的效果。
 -  disp. optimization : 利用助教提供的方法，winner-take-all。
 -   disp. refinement : 這裡我亦使用助教建議的方式，先做
@@ -41,16 +41,16 @@
 
 #### Show your output disparity maps in the report
 
-| tsukuba                                                      | teddy                                                        | venus                                                        | cones                                                        |
-| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| ![tsukuba](/Users/davidfan/Desktop/onedrive/大四(降三)/CV/hw4/CV2019_hw4/best/tsukuba.png) | ![teddy](/Users/davidfan/Desktop/onedrive/大四(降三)/CV/hw4/CV2019_hw4/best/teddy.png) | ![venus](/Users/davidfan/Desktop/onedrive/大四(降三)/CV/hw4/CV2019_hw4/best/venus.png) | ![cones](/Users/davidfan/Desktop/onedrive/大四(降三)/CV/hw4/CV2019_hw4/best/cones.png) |
-| 1.44 sec                                                     | 2.56 sec                                                     | 7.52 sce                                                     | 7.78 sce                                                     |
+| tsukuba                        | teddy                      | venus                      | cones                      |
+| ------------------------------ | -------------------------- | -------------------------- | -------------------------- |
+| ![tsukuba](./best/tsukuba.png) | ![teddy](./best/teddy.png) | ![venus](./best/venus.png) | ![cones](./best/cones.png) |
+| 1.44 sec                       | 2.56 sec                   | 7.52 sce                   | 7.78 sce                   |
 
 #### Show your bad pixel ratio of each disparity maps in the report
 
 
 
-![Screen Shot 2019-12-27 at 10.23.54 AM](/Users/davidfan/Desktop/Screen Shot 2019-12-27 at 10.23.54 AM.png)
+![Screen Shot 2019-12-27 at 10.23.54 AM](./best/03.png)
 
 
 
